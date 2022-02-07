@@ -5,7 +5,7 @@ from PIL import Image
 def main():
     st.header("How old are you according to a Convolution Neural Network? 🥸👧")
     st.write("Upload an image of yourself below to find out! (preferably a squared image and containing only your face)")
-    file = st.file_uploader()
+    file = st.file_uploader("Upload Photo")
     if file is not None:
         st.image(file, width=300)
         image = Image.open(file)
